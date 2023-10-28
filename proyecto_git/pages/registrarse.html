@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="shortcut icon" href="../f1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <section class="logoInicial">
+                <img src="../assets/image/Formula1inicio.png" alt="Logo" =>
+            </section>   
+        </a>
+        <nav class="listaNav">
+            <li><a class="linkNav" href="../index.html">Inicio</a></li>
+            <li><a class="linkNav" href="./historia.html">Historia</a></li>
+            <li><a class="linkNav" href="./escuderia_pilotos.html">Escuderias y Pilotos</a></li>
+            <li><a class="linkNav" href="./mundial.html">Mundial</a></li>
+            <li><a class="linkNav" href="./registrarse.html">Registrarse</a></li>
+        </nav>
+    </header>
+    <nav>
+        <main class="contenidoformulario">
+            <h2>Registrate</h2>
+            <form class="formulario" action="">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                <label for="apellido">Apellido*</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>           
+                
+                <label for="mail">Email*</label>
+                <input type="email" id="mail" name="mail" placeholder="Ingrese su Email" required>
+            
+                <!-- Coloque unos checkbox pero no estaria pudiendo hacer que al elegir una opciòn la otra se cancele -->
+                <label for="opciones">¿Desea Recibir correos de este sitio a su Email?</label>
+                <label for="si">Si</label>
+                <input type="checkbox" id="si" name="si">
+                <label for="no">No</label>
+                <input type="checkbox" name="no" id="no">
+                
+                <label for="region">Regiòn</label>
+                <input type="region" id="region" name="region" placeholder="Seleccione la Regiòn correspondiente" required>
+                
+                <label for="pais">Paìs</label>
+                <input type="pais" id="pais" name="pais" placeholder="Seleccion el paìs correspondiente con su Regiòn">
+
+                <div>
+                    <input type="submit" value="Registrarse">
+                    <input type="reset" value="Limpiar Formulario">
+                </div>
+            </form>
+        </main>
+    </nav>
+    <footer>
+        <nav class="piedepagina">
+            <table class="tabla">
+                <caption>Informaciòn sobre proximas carreras</caption>
+                <colgroup>
+                <col span="3">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Horario de Largada</th>
+                        <th>Pais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20-22 Octubre</td>
+                        <td>16hs</td>
+                        <td>FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023</td>
+                    </tr>
+                    <tr>
+                        <td>27-29 Octubre</td>
+                        <td>17hs</td>
+                        <td>FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tabla">
+                <caption>Informaciòn sobre proximas carreras</caption>
+                <colgroup>
+                    <col span="1">
+                    </colgroup>
+                    <table>
+                        <tr>
+                            <th>Pista de la Proxima Carrera</th>
+                        </tr>
+                    </table>
+                    <tbody>
+                        <tr>
+                            <td><img src="../assets/image/F1 Estados Unidos.png" alt="Pista De la Proxima Carrera" class=></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+/*Estilos Imagen Logo Inicioal*/
+.logoInicial{
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/image/Formula1inicio.png);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Estilos Menù(Fuente, color, ubicaciòn en la pagina)*/
+.listaNav{
+    list-style: none;
+    margin-left: 40%;
+    margin-right: 20%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px ;
+}
+.listaNav li{
+    /*Valor por defecto de la lista*/
+    display: block;
+    /*Valor por el cual reemplazaremos a la lista*/
+    display: inline;
+    margin-left: 5%;
+}
+.linkNav{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+/*Estilos del fondo y de la fuente del contenido principal(index.html)*/
+ @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      .contenedor-novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #eee;
+      }
+      .novedad {
+        position: relative;
+        margin-top: 40px;
+        transition: all 0.3s ease-in-out;
+      }
+      .tarjeta, .contenedor-expansible {
+        background-color: #fff;
+        width: 300px;
+        height: 400px;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0px 3px 5px #818181;
+        transition: all .5s ease-in-out;
+      }
+      .novedad:hover > .tarjeta {
+        opacity: 0;
+      }
+      .novedad:hover > .titulo {
+        color: red; 
+      }
+      .novedad:hover > .contenedor-expansible {
+        opacity: 1;
+      }
+      .contenedor-expansible {
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        padding: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .contenedor-expansible p {
+        margin: 0 15px;
+        text-align: center;
+      }
+      .titulo {
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .contenedor-informacion {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .informacion {
+        width: 50%;
+      }
+      .imagen-novedad, .imagenpiloto {
+        width: 50%;
+        height: auto;
+      }
+/*Dieseño del Footer, tablas, etc*/
+.piedepagina{
+    position: relative;
+    margin-top: 40px;
+} 
+.tabla{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px ;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+.tablacontenidoprincipal{
+    color: black;
+    display: inline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px ;
+    margin-left: 0%;
+    margin-right: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*Estilos del Formulario dentro de registrarse.html*/
+.main .contenidoformulario{
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 3%;
+}
+.formulario{
+  display: block;
+}
+/*No estaria pudiendo poner el formulario en bloque, osea las opciones del formulario una abajo dela otra*/
