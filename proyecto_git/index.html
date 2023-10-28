@@ -1,114 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 FanPage</title>
-    <link rel="shortcut icon" href="./f1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 FanPage</title>
+  <link rel="shortcut icon" href="./f1.ico" type="image/x-icon">
+  <!--<link rel="stylesheet" href="./css/estilos.css">-->
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <a href="./index.html">
-            <section class="logoInicial">
-            <img src="./assets/image/Formula1inicio.png" alt="Logo" =>
-            </section>    
-        </a>
-        <nav>
-            <!-- Lista Desordenada -->
-            <ul class="listaNav">
-                <li><a class="linkNav" href="./index.html">Inicio</a></li>
-                <li><a class="linkNav" href="./pages/historia.html">Historia</a></li>
-                <li><a class="linkNav" href="./pages/escuderia_pilotos.html">Escuderias y Pilotos</a></li>
-                <li><a class="linkNav" href="./pages/mundial.html">Mundial</a></li>
-                <li><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="contenido-principal">
-        <div class="contenedor-novedades">
-          <div class="novedad">
-            <div class="contenedor-expansible">
-              <h1>Informacion Detallada</h1>
-              <p>
-                El piloto largo 6to en esta carrera debido a que en su clasificacion le anularon una vuelta por salirse de los limites de la pista, lo que llevo a que se quede con un tiempo dentro de todo lento para los tiempos que suele hacer el Holandes, sin embargo en la carrera mostro una actuacion formidable, siendo que en la primera curva logro ponerse en el 2do puesto ya, una cosa sorprendente. Luego al finalizar la carrera nos encontramos que habia doblado a el piloto que estaba en el 3er puesto de la carrera, lo cual nos da el indicio de que iba volando aproximadamente en la pista Max. 
-              </p>
-            </div>
-            <div class="tarjeta">
-              <h2 class="titulo">Max Verstappen gana nuevanemente la carrera del fin de semana</h2>
-              <div class="contenedor-informacion">
-                <p class="informacion">
-                  El piloto principal de la escuderia RedBull gano sacandole casi 25 segundos a su perseguidor que en este caso era Charles Leclerc de la escuderia Ferrari.
-                </p>
-                <img src="./assets/image/LogoMaxVerstappen320px.png" alt="" class="imagen-novedad"/>
-              </div>
-            </div>
+  <header class="container-fluid">
+    <div class="row">
+      <a class="col-xs-auto justify-content-center img-logo" href="./index.html">
+        <img class="logo" src="./assets/image/Formula1inicio.png" alt="Logo">
+      </a>
+    </div>
+    <nav class="container-fluid justify-content-center mt-4 pb-2">
+      <!-- Lista Desordenada -->
+
+      <div class="row w-100">
+        <div class="col d-flex justify-content-center">
+          <a class="text-center w-100 text-decoration-none text-uppercase" href="./index.html">Inicio</a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a class="text-center w-100 text-decoration-none text-uppercase" href="./pages/historia.html">Historia</a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a class="text-center w-100 text-decoration-none text-uppercase"
+            href="./pages/escuderia_pilotos.html">Escuderias y Pilotos</a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a class="text-center w-100 text-decoration-none text-uppercase" href="./pages/mundial.html">Mundial</a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a class="text-center w-100 text-decoration-none text-uppercase"
+            href="./pages/registrarse.html">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="contenido-principal">
+    <div class="w-100 pt-4 bg-color">
+      <div class="row row-cols justify-content-center py-3 px-3">
+        <div class="col novedad mb-3">
+          <div class="contenedor-expansible">
+            <h1>Informacion Detallada</h1>
+            <p>
+              El piloto largo 6to en esta carrera debido a que en su clasificacion le anularon una vuelta por salirse de
+              los limites de la pista, lo que llevo a que se quede con un tiempo dentro de todo lento para los tiempos
+              que
+              suele hacer el Holandes, sin embargo en la carrera mostro una actuacion formidable, siendo que en la
+              primera
+              curva logro ponerse en el 2do puesto ya, una cosa sorprendente. Luego al finalizar la carrera nos
+              encontramos que habia doblado a el piloto que estaba en el 3er puesto de la carrera, lo cual nos da el
+              indicio de que iba volando aproximadamente en la pista Max.
+            </p>
           </div>
-          <div class="novedad">
-            <div class="contenedor-expansible">
-                <h1>Informacion Detallada</h1>
-                <p>
-                  Redbull hizo una temporada 2023 magnifica, casi sin errores en lo que fueron desde las practicas hasta las carreras, con todo esto dicho, pasamos a hablar de sus pilotos, Max Verstappen y Checo Perez los cuales hicieron una temporada formidable en lo que podemos hablar de conduccion, Max Verstappen ya siendo el campeon del mundial de pilotos con una diferencia amplia de casi 120 puntos sobre el segundo piloto en el mundial que en este caso es Lewis Hamilton viejos conocidos. 
-                </p>
-              </div>
-              <div class="tarjeta">
-            <h2 class="titulo">RedBull campeon del mundial de constructores</h2>
+          <div class="tarjeta">
+            <h2 class="titulo">Max Verstappen gana nuevanemente la carrera del fin de semana</h2>
             <div class="contenedor-informacion">
               <p class="informacion">
-                  A falta de 5 carreras, RedBull se hace con el premio de Constructores del 2023
+                El piloto principal de la escuderia RedBull gano sacandole casi 25 segundos a su perseguidor que en este
+                caso era Charles Leclerc de la escuderia Ferrari.
               </p>
-              <img src="./assets/image/AstonMartinF1320px.png" alt="" class="imagen-novedad"/>
+              <img src="./assets/image/LogoMaxVerstappen320px.png" alt="" class="imagen-col novedad" />
             </div>
           </div>
         </div>
-    <footer>
-        <nav class="piedepagina">
-            <table class="tablaInfor">
-                <caption>Informaciòn sobre proximas carreras</caption>
-                <colgroup>
-                <col span="3">
-                </colgroup>
-                <thead>
-                  <section class="linkTablaInfor">
-                    <tr>
-                            <th>Fecha</th>
-                            <th>Horario de Largada</th>
-                            <th>Pais</th>
-                        </section>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>20-22 Octubre</td>
-                        <td>16hs</td>
-                        <td>FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023</td>
-                    </tr>
-                    <tr>
-                        <td>27-29 Octubre</td>
-                        <td>17hs</td>
-                        <td>FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="tablaPista">
-                <caption>Informaciòn sobre proximas carreras</caption>
-                <colgroup>
-                    <col span="1">
-                    </colgroup>
-                    <table>
-                      <section class="linkTablaPista"></section>
-                        <tr>
-                                <th>Pista de la Proxima Carrera</th>
-                            </section>
-                        </tr>
-                    </table>
-                    <tbody>
-                        <tr>
-                            <td><img src="./assets/image/F1EstadosUnidos.png" alt="Pista De la Proxima Carrera" class=></td>
-                        </tr>
-                    </tbody>
-            </table>
-        </nav>
-    </footer>
+        <div class="col novedad mb-3">
+          <div class="contenedor-expansible">
+            <h1>Informacion Detallada</h1>
+            <p>
+              Redbull hizo una temporada 2023 magnifica, casi sin errores en lo que fueron desde las practicas hasta las
+              carreras, con todo esto dicho, pasamos a hablar de sus pilotos, Max Verstappen y Checo Perez los cuales
+              hicieron una temporada formidable en lo que podemos hablar de conduccion, Max Verstappen ya siendo el
+              campeon del mundial de pilotos con una diferencia amplia de casi 120 puntos sobre el segundo piloto en el
+              mundial que en este caso es Lewis Hamilton viejos conocidos.
+            </p>
+          </div>
+          <div class="tarjeta">
+            <h2 class="titulo">RedBull campeon del mundial de constructores</h2>
+            <div class="contenedor-informacion">
+              <p class="informacion">
+                A falta de 5 carreras, RedBull se hace con el premio de Constructores del 2023
+              </p>
+              <img src="./assets/image/AstonMartinF1320px.png" alt="" class="imagen-col novedad" />
+            </div>
+          </div>
+        </div>
+        <div class="col novedad mb-3">
+          <div class="contenedor-expansible">
+            <h1>Informacion Detallada</h1>
+            <p>
+              El joven piloto Argentino se encontraba disputando la temporada 2023 de la Formula 3, y estaba el sueño de que pudiera llegar a la Formula 2 por su gran desempeño en esta temporada, pero lamentablemente el sueño era lejano debido a que para poder conseguir una plaza en la Formula 2, el piloto debe conseguir los sponsors necesarios.
+              Afortunadamente luego de su paso por Buenos Aires pudo reunir a los respectivos sponsors para poder conseguir una plaza en la siguiente categoria de la FIA (Federacion Internacional del Automovilismo), y esta a un paso de la Formula 1. 
+            </p>
+          </div>
+          <div class="tarjeta">
+            <h2 class="titulo">Un Piloto Argentino llega a la Formula 2</h2>
+            <div class="contenedor-informacion">
+              <p class="informacion">
+                Franco colapinto el joven piloto argentino llega a la Formula 2 a partir del año que viene, y esta a un paso de la Formula 1.
+              </p>
+              <img src="./assets/image/FrancoColapinto.png" alt="" class="imagen-col novedad" />
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer>  
+    <nav>
+      <ul class="listafooter">
+          <li><a href="https://www.google.com/" target="_blank">Acuerdos y Condiciones</a></li>
+          <li><a href="./pages/conciertos.html">Fechas de Conciertos</a></li>
+          <li><a href="./pages/contacto.html">Contactate con Nosotros</a></li>
+          <li><a href="./pages/historia.html">Conoce nuestra Historia</a></li>
+      </ul>
+  </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
