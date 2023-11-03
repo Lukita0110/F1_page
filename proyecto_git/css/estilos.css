@@ -108,7 +108,7 @@ a {
   text-align: center;
 }
 .imagen-novedad, .imagenpiloto {
-  width: 100%;
+  width: 70%;
   display: block;
   height: auto;
   object-fit: contain;
@@ -119,24 +119,29 @@ a {
   position: relative;
   margin-top: 40px;
 }
-.tabla {
-  color: black;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0%;
-  margin-bottom: 5%;
+.listafooter{
+  text-decoration: none;
 }
-.tablacontenidoprincipal {
-  color: black;
-  display: inline;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  margin-left: 0%;
-  margin-right: 50%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #fc0000;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  transition: all .4s ease-in-out;
+}
+.buttons a:hover {
+  transform: scale(1.2);
 }
 /*Estilos del Formulario dentro de registrarse.html*/
 .main .contenidoformulario {
