@@ -1,0 +1,19 @@
+{
+  "name": "proyecto_git",
+  "version": "1.0.0",
+  "description": "proyecto_f1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukita0110/F1_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukita0110/F1_page/issues"
+  },
+  "homepage": "https://github.com/Lukita0110/F1_page#readme"
+}
