@@ -1,0 +1,5 @@
+@mixin texto($alineacion,$ancho,$size-fuente){
+    text-align: $alineacion;
+    width: $ancho;
+    font-size: $size-fuente;
+}

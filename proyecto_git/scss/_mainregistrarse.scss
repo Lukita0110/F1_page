@@ -1,0 +1,9 @@
+.main .contenidoformulario {
+    color: map-get($colores , alternativo );
+    font-family: $familia-fuente;
+    font-size: map-get($sizes , 16);
+    margin-left: 3%;
+  }
+  .formulario {
+    display: $display-block;
+  }

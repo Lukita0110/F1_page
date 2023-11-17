@@ -1,5 +1,5 @@
 .bg-color {
-    background: #df0200;
+    background: map-get($colores , secundario );
     background: linear-gradient(#df0200, #ffd6d6, #df0200);
     .novedad {
       min-width: 340px;
@@ -13,7 +13,7 @@
         display: $display-flex;
         flex-direction: column;
         align-items: $alineacion-items-center;
-        background-color: $color-principal;
+        background-color: map-get($colores , principal );
       } 
       .contenedor-expansible {
         opacity: 0;
@@ -21,7 +21,7 @@
         padding: 10px;
         top: 0;
         left: 0;
-        background-color: map-get($estilos , color);
+        background-color: map-get($colores , principal);
         width: $width-100;
         height: $height-100;
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
@@ -34,9 +34,10 @@
           opacity: 1;
         }
         .contenedor-expansible h1 {
-          text-align: $alineacion-texto-center;
-          width: $width-100;
-          font-size: $size-fuente-26px;
+          text-align: center;
+          width: 100%;
+          font-size: 26px;
+          @include fuente(center,100%,26px);
         }
         .contenedor-expansible p {
           text-align: $alineacion-texto-center;
@@ -46,7 +47,7 @@
         }
       }
       .tarjeta {
-        background-color: $color-principal;
+        background-color: map-get($colores , primario );
         width: $width-100;
         height: $height-100;
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
@@ -61,7 +62,7 @@
           text-align: $alineacion-texto-center;
           display: $display-block;
           &:hover{
-            color: $color-secundario;
+            color: map-get($colores , secundario );
           }
         }
         .contenedor-informacion {
@@ -88,14 +89,3 @@
     }
 
   }
-    
-    /*Estilos del Formulario dentro de registrarse.html*/
-  .main .contenidoformulario {
-      color: $color-alternativo;
-      font-family: $familia-fuente;
-      font-size: map-get($sizes , 16);
-      margin-left: 3%;
-    }
-    .formulario {
-      display: $display-block;
-    }
