@@ -1,0 +1,101 @@
+.bg-color {
+    background: #df0200;
+    background: linear-gradient(#df0200, #ffd6d6, #df0200);
+    .novedad {
+      min-width: 340px;
+      max-width: 340px;
+      height: 550px;
+      position: relative;
+      box-sizing: $box-size;
+      padding: $padding-0 !important;
+      margin: 10px;
+      .contenedor-novedades {
+        display: $display-flex;
+        flex-direction: column;
+        align-items: $alineacion-items-center;
+        background-color: $color-principal;
+      } 
+      .contenedor-expansible {
+        opacity: 0;
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        background-color: map-get($estilos , color);
+        width: $width-100;
+        height: $height-100;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        z-index: 10;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          display: $display-block;
+          opacity: 1;
+          opacity: 1;
+        }
+        .contenedor-expansible h1 {
+          text-align: $alineacion-texto-center;
+          width: $width-100;
+          font-size: $size-fuente-26px;
+        }
+        .contenedor-expansible p {
+          text-align: $alineacion-texto-center;
+          padding: 10px;
+          width: $width-100;
+          font-size: map-get($sizes , 16);
+        }
+      }
+      .tarjeta {
+        background-color: $color-principal;
+        width: $width-100;
+        height: $height-100;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        padding: 10px;
+        overflow: hidden;
+        &:hover{
+          opacity: 0;
+        }
+        .titulo {
+          font-size: $size-fuente-26px;
+          text-align: $alineacion-texto-center;
+          display: $display-block;
+          &:hover{
+            color: $color-secundario;
+          }
+        }
+        .contenedor-informacion {
+          width: $width-100;
+          height: 80%;
+          display: $display-flex;
+          flex-direction: column;
+          align-items: $alineacion-items-center;
+          justify-content: space-between;
+          .informacion {
+            margin: $margin-0;
+            margin-top: 20px;
+            text-align: $alineacion-texto-center;
+          }
+          .imagen-novedad, .imagenpiloto {
+            width: 70%;
+            display: $display-block;
+            height: auto;-o-object-fit: contain;
+            object-fit: contain;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+  }
+    
+    /*Estilos del Formulario dentro de registrarse.html*/
+  .main .contenidoformulario {
+      color: $color-alternativo;
+      font-family: $familia-fuente;
+      font-size: map-get($sizes , 16);
+      margin-left: 3%;
+    }
+    .formulario {
+      display: $display-block;
+    }

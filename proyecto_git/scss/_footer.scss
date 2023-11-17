@@ -1,0 +1,55 @@
+.piedepagina {
+    position: relative;
+    margin-top: 40px;
+    .listafooter {
+      text-decoration: $decoracion-texto;
+    }
+    .buttons {
+      min-width: 700px;
+      display: $display-flex;
+      justify-content: space-around;
+      min-width: 300px;
+      .buttons a {
+        text-decoration: $decoracion-texto;
+        font-size: $size-fuente-28px;
+        width: $width-60px;
+        height: $height-60px;
+        line-height: 60px;
+        text-align: $alineacion-texto-center;
+        background: $color-secundario;
+        color: $color-principal;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px $color-principal;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+          transform: scale(1.2);
+        }
+          }
+        }
+      }
+  
+  .listafooter {
+    text-decoration: $decoracion-texto;
+  }
+  .buttons {
+    min-width: 700px;
+    display: $display-flex;
+    justify-content: space-around;
+    min-width: 300px;
+  }
+  .buttons a {
+    text-decoration: $decoracion-texto;
+    font-size: $size-fuente-28px;
+    width: $width-60px;
+    height: $height-60px;
+    line-height: 60px;
+    text-align: $alineacion-texto-center;
+    background: $color-secundario;
+    color: $color-principal;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px $color-principal;
+    transition: all 0.4s ease-in-out;
+  }
+  .buttons a:hover {
+    transform: scale(1.2);
+  }

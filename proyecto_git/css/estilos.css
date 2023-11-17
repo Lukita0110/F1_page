@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*Estilos del fondo y de la fuente del contenido principal(index.html)*/
+/*Variables*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   margin: 0;
@@ -13,33 +12,29 @@ header {
   position: sticky;
   z-index: 1;
 }
-
-a {
+header a {
   color: #000 !important;
 }
-
-.img-logo {
+header .img-logo {
   display: flex;
 }
-
-.logo {
+header .img-logo .logo {
   max-width: 300px;
   height: 100%;
 }
 
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .bg-color {
   background: #df0200;
   background: linear-gradient(#df0200, #ffd6d6, #df0200);
 }
-
-.contenedor-novedades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #eee;
-}
-
-.novedad {
+.bg-color .novedad {
   min-width: 340px;
   max-width: 340px;
   height: 550px;
@@ -48,35 +43,13 @@ a {
   padding: 0 !important;
   margin: 10px;
 }
-
-.novedad:hover > .contenedor-expansible {
-  display: block;
-  opacity: 1;
-}
-
-.tarjeta {
+.bg-color .novedad .contenedor-novedades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
-  padding: 10px;
-  overflow: hidden;
 }
-
-.novedad:hover > .tarjeta {
-  opacity: 0;
-}
-
-.novedad:hover > .titulo {
-  color: red;
-}
-
-.novedad:hover > .contenedor-expansible {
-  opacity: 1;
-}
-
-.contenedor-expansible {
+.bg-color .novedad .contenedor-expansible {
   opacity: 0;
   position: absolute;
   padding: 10px;
@@ -90,27 +63,43 @@ a {
   z-index: 10;
   transition: all 0.5s ease-in-out;
 }
-
-.contenedor-expansible h1 {
+.bg-color .novedad .contenedor-expansible:hover {
+  display: block;
+  opacity: 1;
+  opacity: 1;
+}
+.bg-color .novedad .contenedor-expansible .contenedor-expansible h1 {
   text-align: center;
   width: 100%;
   font-size: 26px;
 }
-
-.contenedor-expansible p {
+.bg-color .novedad .contenedor-expansible .contenedor-expansible p {
   text-align: center;
   padding: 10px;
   width: 100%;
   font-size: 16px;
 }
-
-.titulo {
+.bg-color .novedad .tarjeta {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+}
+.bg-color .novedad .tarjeta:hover {
+  opacity: 0;
+}
+.bg-color .novedad .tarjeta .titulo {
   font-size: 26px;
   text-align: center;
   display: block;
 }
-
-.contenedor-informacion {
+.bg-color .novedad .tarjeta .titulo:hover {
+  color: red;
+}
+.bg-color .novedad .tarjeta .contenedor-informacion {
   width: 100%;
   height: 80%;
   display: flex;
@@ -118,26 +107,60 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-
-.informacion {
+.bg-color .novedad .tarjeta .contenedor-informacion .informacion {
   margin: 0;
   margin-top: 20px;
   text-align: center;
 }
-
-.imagen-novedad, .imagenpiloto {
+.bg-color .novedad .tarjeta .contenedor-informacion .imagen-novedad, .bg-color .novedad .tarjeta .contenedor-informacion .imagenpiloto {
   width: 70%;
   display: block;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
-/*Dieseño del Footer, tablas, etc*/
+/*Estilos del Formulario dentro de registrarse.html*/
+.main .contenidoformulario {
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 3%;
+}
+
+.formulario {
+  display: block;
+}
+
 .piedepagina {
   position: relative;
   margin-top: 40px;
+}
+.piedepagina .listafooter {
+  text-decoration: none;
+}
+.piedepagina .buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+}
+.piedepagina .buttons .buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #fff;
+  transition: all 0.4s ease-in-out;
+}
+.piedepagina .buttons .buttons a:hover {
+  transform: scale(1.2);
 }
 
 .listafooter {
@@ -148,6 +171,7 @@ a {
   min-width: 700px;
   display: flex;
   justify-content: space-around;
+  min-width: 300px;
 }
 
 .buttons a {
@@ -157,10 +181,10 @@ a {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background: #fc0000;
-  color: #f1f1f1;
+  background: red;
+  color: #fff;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px #fff;
   transition: all 0.4s ease-in-out;
 }
 
@@ -168,24 +192,4 @@ a {
   transform: scale(1.2);
 }
 
-/*Estilos del Formulario dentro de registrarse.html*/
-.main .contenidoformulario {
-  color: black;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
-  margin-left: 3%;
-}
-
-.formulario {
-  display: block;
-}
-
-/*No estaria pudiendo poner el formulario en bloque, osea las opciones del formulario una abajo dela otra*/
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
 /*# sourceMappingURL=estilos.css.map */

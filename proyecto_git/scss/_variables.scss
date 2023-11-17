@@ -1,0 +1,52 @@
+/*Variables*/
+$color-principal: #fff;
+$color-secundario:  red;
+$color-alternativo: #000;
+
+$margin-0: 0;
+$padding-0: 0; 
+
+$box-size: border-box;
+
+$width-100: 100%;
+$height-100: 100%;
+$width-60px: 60px;
+$height-60px: 60px;
+
+$familia-fuente: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+$fuente-principal: "Roboto";
+$decoracion-texto: none;
+$size-fuente-16px: 16px;
+$size-fuente-26px: 26px;
+$size-fuente-28px: 28px;
+$alineacion-texto-center: center;
+$alineacion-items-center: center;
+
+$display-flex: flex;
+$display-block: block;
+
+$fuentes:(
+    thin:100,
+    light:300,
+    regular:400,
+    medium:500,
+    bold:700,
+    black:900
+);
+
+$sizes:(
+    catorce:14px,
+    16:16px,
+    20:20px,
+    10:10px,
+    1rem:1rem,
+    2rem:2rem
+);
+
+$estilos:(
+    color: #fff,
+    centro:center,
+    tFuente:35px,
+    1rem:1rem
+);
+
