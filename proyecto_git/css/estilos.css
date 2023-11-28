@@ -168,4 +168,34 @@ header .img-logo .logo {
   transform: scale(1.2);
 }
 
+.listafooter {
+  text-decoration: none;
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+  margin-top: 5px;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
 /*# sourceMappingURL=estilos.css.map */
