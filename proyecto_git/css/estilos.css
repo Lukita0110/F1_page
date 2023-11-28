@@ -1,18 +1,171 @@
-/* Error: Undefined mixin.
- *    ,
- * 40 |           @include fuente(center,100%,26px);
- *    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\_main.scss 40:11  @import
- *   scss\estilos.scss 8:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 40 \2502            @include fuente(center,100%,26px);\d\a    \2502            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\_main.scss 40:11  @import\a   scss\\estilos.scss 8:9  root stylesheet";
+/*Variables*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+
+header {
+  box-shadow: 0px 2px 2px #fff;
+  position: sticky;
+  z-index: 1;
+}
+header a {
+  color: #000 !important;
+}
+header .img-logo {
+  display: flex;
+}
+header .img-logo .logo {
+  max-width: 300px;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.bg-color {
+  background: red;
+  background: linear-gradient(#df0200, #ffd6d6, #df0200);
+}
+
+.novedad {
+  min-width: 340px;
+  max-width: 340px;
+  height: 550px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 !important;
+  margin: 10px;
+}
+.novedad .contenedor-novedades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.novedad .contenedor-expansible {
+  opacity: 0;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+}
+.novedad .contenedor-expansible:hover {
+  opacity: 1;
+}
+.novedad .contenedor-expansible .contenedor-expansible h1, .novedad .contenedor-expansible h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 26px;
+}
+.novedad .contenedor-expansible .contenedor-expansible p {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+.novedad .tarjeta {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+}
+.novedad .tarjeta:hover {
+  opacity: 0;
+}
+.novedad .tarjeta .titulo {
+  font-size: 26px;
+  text-align: center;
+  display: block;
+}
+.novedad .tarjeta .titulo:hover {
+  color: red;
+}
+.novedad .tarjeta .contenedor-informacion {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.novedad .tarjeta .contenedor-informacion .informacion {
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+.novedad .tarjeta .contenedor-informacion .imagen-novedad,
+.novedad .tarjeta .contenedor-informacion .imagenpiloto {
+  width: 70%;
+  display: block;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.main .contenidoformulario {
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 3%;
+}
+
+.formulario {
+  display: block;
+}
+
+.piedepagina {
+  position: relative;
+  margin-top: 40px;
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+  margin-top: 10px;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #fff;
+  transition: all 0.4s ease-in-out;
+}
+.buttons a:hover {
+  transform: scale(1.2);
+}
+.buttons a .biografia {
+  text-align: center;
+  color: #000;
+  font-size: 10px;
+  font-family: "Roboto";
+}
+
+/*# sourceMappingURL=estilos.css.map */
