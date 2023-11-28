@@ -65,7 +65,7 @@
           text-align: $alineacion-texto-center;
           display: $display-block;
           &:hover{
-            color: map-get($colores , secundario );
+            color: map-get($colores , secundario);
           }
         }
         .contenedor-informacion {

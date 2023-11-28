@@ -52,6 +52,7 @@ header .img-logo .logo {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  padding: 0%;
 }
 .bg-color .novedad .contenedor-expansible {
   opacity: 0;
@@ -84,6 +85,7 @@ header .img-logo .logo {
   font-size: 16px;
 }
 .bg-color .novedad .tarjeta {
+  background-color: #fff;
   width: 100%;
   height: 100%;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
@@ -147,6 +149,7 @@ header .img-logo .logo {
   display: flex;
   justify-content: space-around;
   min-width: 300px;
+  margin-top: 5px;
 }
 .piedepagina .buttons .buttons a {
   text-decoration: none;
@@ -162,36 +165,6 @@ header .img-logo .logo {
   transition: all 0.4s ease-in-out;
 }
 .piedepagina .buttons .buttons a:hover {
-  transform: scale(1.2);
-}
-
-.listafooter {
-  text-decoration: none;
-}
-
-.buttons {
-  min-width: 700px;
-  display: flex;
-  justify-content: space-around;
-  min-width: 300px;
-}
-
-.buttons a {
-  text-decoration: none;
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: red;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px #fff;
-  transition: all 0.4s ease-in-out;
-  margin-top: 5px;
-}
-
-.buttons a:hover {
   transform: scale(1.2);
 }
 
