@@ -188,6 +188,7 @@ header .img-logo .logo {
   border-radius: 50%;
   box-shadow: 2px 2px 5px #fff;
   transition: all 0.4s ease-in-out;
+  margin-top: 5px;
 }
 
 .buttons a:hover {
