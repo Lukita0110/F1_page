@@ -17,6 +17,7 @@
         flex-direction: column;
         align-items: $alineacion-items-center;
         background-color: map-get($colores , principal );
+        padding: 0%;
       } 
       .contenedor-expansible {
         opacity: 0;
