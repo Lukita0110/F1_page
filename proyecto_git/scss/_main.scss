@@ -1,3 +1,6 @@
+.row w-100{
+  padding: 0%;
+}
 .bg-color {
     background: map-get($colores , secundario );
     background: linear-gradient(#df0200, #ffd6d6, #df0200);
