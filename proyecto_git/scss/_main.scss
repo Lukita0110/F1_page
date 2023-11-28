@@ -16,7 +16,7 @@
         display: $display-flex;
         flex-direction: column;
         align-items: $alineacion-items-center;
-        background-color: map-get($colores , principal );
+        background-color: $color-principal;
         padding: 0%;
       } 
       .contenedor-expansible {
